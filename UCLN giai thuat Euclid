@@ -1,0 +1,26 @@
+// gcd - ucln
+// giải thuật Euclid  a = b*q + r 
+// UCLN(a,b)= b if r=0, UCLN(b,r) if r!=0
+#include <iomanip>
+#include <iostream>
+#include <fstream>
+#include <math.h>
+using namespace std;
+
+
+int gcd(int a, int b) {
+    int tmp;
+    while(b != 0) {
+        tmp = a % b;
+        a = b;
+        b = tmp;
+    }
+    return a;
+}
+
+int main(){
+  int a,b;
+  cin >> a >> b;
+  cout<< gcd(a, b);
+  return 0;
+}
