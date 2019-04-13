@@ -1,5 +1,6 @@
 // gcd - ucln
 // giải thuật Euclid  a = b*q + r
+// UCLN(a,b)= b if r=0, UCLN(b,r) if r!=0
 // recursive
 #include <iomanip>
 #include <iostream>
